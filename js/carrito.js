@@ -117,9 +117,7 @@ function generarOrdenYEnviarWhatsApp() {
 
     `;
 
-    // You can replace this with the actual WhatsApp API integration
     const whatsappLink = `https://wa.me/3816605580?text=${encodeURIComponent(orderString)}`;
     
-    // Open the WhatsApp link
     window.open(whatsappLink, '_blank');
 }
