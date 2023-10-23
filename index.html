@@ -5,75 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luan Fit</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Luan Fit</h1>
+            <button class="open-menu" id="open-menu"> <i class="bi bi-list"></i></button>
+        </header>
         <aside>
+            <button class="close-menu" id="close-menu"> <i class="bi bi-x-circle"></i>
+            </button>
             <header>
                 <h1 class="logo">Luan Fit</h1>
             </header>
             <nav>
                 <ul class="menu">
                     <li>
-                        <button class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb"></i>todos los productos</button>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb"></i>todos los productos</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill"></i>Abrigos</button>
+                        <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill"></i>Abrigos</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill"></i>Pantalones</button>
+                        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill"></i>Camisetas</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill"></i>Camisetas</button>
+                        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb-fill"></i>pantalones</button>
                     </li>
                     <li>
-                        <a href="carrito.html" class="boton-menu boton-carrito"><i class="bi bi-cart4"></i> Carrito <span class="numerito">0</span></a>
+                        <a href="carrito.html" class="boton-menu boton-carrito"><i class="bi bi-cart4"></i> Carrito <span id="numerito" class="numerito">0</span></a>
                     </li>
                 </ul>
             </nav>
             <footer>
-                <p class="texto-footer">derechos reservados</p>
+                <p class="texto-footer">Luan Fit ©</p>
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal">todos los productos</h2>
-            <div class="contenedor-productos">
-                <div class="producto">
-                    <img class="producto-imagen" src="1.jpg" alt="">
-                    <div class="productos-detalles">
-                    <h3 class="producto-titulo">abrigos</h3>
-                    <p class="producto-precio">$200</p>
-                    <button class="producto-agregar">agregrar</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="producto-imagen" src="1.jpg" alt="">
-                    <div class="productos-detalles">
-                    <h3 class="producto-titulo">abrigos</h3>
-                    <p class="producto-precio">$200</p>
-                    <button class="producto-agregar">agregrar</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="producto-imagen" src="1.jpg" alt="">
-                    <div class="productos-detalles">
-                    <h3 class="producto-titulo">abrigos</h3>
-                    <p class="producto-precio">$200</p>
-                    <button class="producto-agregar">agregrar</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="producto-imagen" src="1.jpg" alt="">
-                    <div class="productos-detalles">
-                    <h3 class="producto-titulo">abrigos</h3>
-                    <p class="producto-precio">$200</p>
-                    <button class="producto-agregar">agregrar</button>
-                    </div>
-                </div>
+            <h2 class="titulo-principal" id="titulo-principal">todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+             <!-- esto se completa con la funcion de JS -->
             </div>
         </main>
 
     </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
